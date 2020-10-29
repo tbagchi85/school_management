@@ -18,19 +18,24 @@ class Header extends React.Component {
 
         <header id="header" className="fixed-top header-transparent">
           <div className="container d-flex align-items-center">
-            <h1 className="logo mr-auto"><a href="index.html">School Management</a></h1>
+            <h1 className="logo mr-auto"><Link to='/'>School</Link></h1>
             <nav className="main-nav d-none d-lg-block">
               <ul>
                 <li>
-                  <Link to='#'>
-                    Students
-                    <i className="fa fa-shopping-basket"></i>
+                  <Link to="/students">
+                    <i className="fa fa-graduation-cap"></i>Students
                   </Link>
                 </li>
                 <li>
-                  <Link to='#'>
+                  <Link to='/teachers'>
+                    <i className="fa fa-users"></i>
                     Teachers
-                    <i className="fa fa-shopping-basket"></i>
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/subjects'>
+                    <i className="fa fa-book"></i>
+                    Subjects
                   </Link>
                 </li>
               </ul>

@@ -4,4 +4,10 @@ class Student < ApplicationRecord
 
   validates :name, :roll_name, presence: true
   validates :roll_name, uniqueness: true
+
+  def teachers
+    subject_ids = subjects.ids.uniq
+    teacher_ids = Academic.where(subjectable_type: 'Teacher', subject_id: subject_ids).map(&:subjectable_id).uniq
+    Teacher.where(id: teacher_ids)
+  end
 end
