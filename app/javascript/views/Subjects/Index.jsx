@@ -32,16 +32,6 @@ class SubjectLists extends Component {
     )
     return (
       <main id="main">
-        <div className="float-right">
-          <Link to='#' onClick={(e) => {
-              e.preventDefault()
-              this.addStudentClick()
-            }} className='add_new_record'>
-            <i className="fa fa-plus">
-              Add Student
-            </i>
-          </Link>
-        </div>
         <section id="portfolio" className="portfolio section-bg">
           <div className="container" data-aos="">
             <header className="section-header">
