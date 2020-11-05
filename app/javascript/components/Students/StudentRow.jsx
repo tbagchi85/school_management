@@ -7,7 +7,7 @@ function StudentRow(props) {
   return (
     <tr key={shortid.generate()}>
       <td>{student.name}</td>
-      <td>{student.roll_name}</td>
+      <td>{student.roll_number}</td>
       <td>{student.house}</td>
       <td>
         <p><Link to='#'>Edit</Link></p>

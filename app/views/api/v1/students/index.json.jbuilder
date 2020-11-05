@@ -12,5 +12,6 @@ json.students @students do |student|
   json.teachers student.teachers do |teacher|
     json.id teacher.id
     json.name teacher.name
+    json.education teacher.education
   end
 end
