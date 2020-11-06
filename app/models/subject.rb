@@ -5,5 +5,5 @@ class Subject < ApplicationRecord
   has_many :teachers, :through => :academics, :source => :subjectable,
            :source_type => 'Teacher'
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
 end
