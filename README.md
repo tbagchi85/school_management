@@ -1,4 +1,3 @@
-# README
 
 # To run Seed data
   
