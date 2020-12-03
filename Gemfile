@@ -17,7 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'bootstrap', '~> 4.3.1'
-gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+gem 'faker'
 
 group :development, :test do
   gem 'pry'
